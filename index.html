@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/5d7f79d122.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- taiwind custom color -->
     <script>
       tailwind.config = {
@@ -39,7 +44,70 @@
     </style>
   </head>
   <body class="font-lato">
-    <header></header>
+    <header>
+      <!-- navbar -->
+      <section
+        class="container my-14 max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto"
+      >
+        <!-- large device -->
+        <div
+          class="items-center justify-between bg-[#F85559] rounded-[50px] px-6 py-3 hidden lg:flex"
+        >
+          <!-- menu -->
+          <div>
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-lg text-white">Home</a></li>
+              <li><a class="text-lg text-white">About</a></li>
+              <li><a class="text-lg text-white">Shop</a></li>
+              <li><a class="text-lg text-white">All Fruits</a></li>
+            </ul>
+          </div>
+          <!-- logo -->
+          <div class="flex gap-4 items-center">
+            <img src="./images/logo.png" alt="" />
+            <h3 class="text-3xl text-white font-bold">Fruit Burst</h3>
+          </div>
+          <!-- search -->
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="w-64 h-10 border-3 rounded-3xl pl-3"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass absolute right-5 top-3"
+              style="color: #7a7c7f"
+            ></i>
+          </div>
+        </div>
+        <!-- small device -->
+        <div class="flex justify-between items-center lg:hidden">
+          <!-- logo -->
+          <div class="flex items-center gap-3">
+            <img src="./images/logo.png" alt="" class="w-8 h-9" />
+            <h5 class="text-2xl text-[#121212] font-bold">Fruit Burst</h5>
+          </div>
+          <!-- menu -->
+          <div>
+            <div class="dropdown dropdown-bottom dropdown-end">
+              <label tabindex="0" class="btn m-1"
+                ><i class="fa-solid fa-bars" style="color: #121212"></i
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- navbar end -->
+    </header>
     <main>
       <!-- deal of the day section -->
       <section>
